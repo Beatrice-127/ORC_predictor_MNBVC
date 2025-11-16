@@ -1,0 +1,18 @@
+[project]
+name = "finepdfs"
+version = "0.1.0"
+description = "Dependencies needed to run train_xgb_classifier.ipynb"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.30.1",
+    "datasets>=3.2.0",
+    "matplotlib>=3.9.0",
+    "numpy>=2.1.0",
+    "pandas>=2.2.0",
+    "pymupdf==1.26.1",
+    "scikit-learn>=1.5.0",
+    "tqdm>=4.66.0",
+    "xgboost>=3.0.5",
+]
