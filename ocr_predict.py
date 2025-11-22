@@ -288,8 +288,8 @@ class PDFFeatureExtractor:
             doc, sampled_page_indices)
         junk_image_xrefs = set(
             doc_level_stats.get("junk_image_xrefs_list", []))
-        features.update(
-            {k: v for k, v in doc_level_stats.items() if not k.endswith("_list")})
+        # features.update(
+        #     {k: v for k, v in doc_level_stats.items() if not k.endswith("_list")})
 
         is_form_pdf = getattr(doc, "is_form_pdf", False)
         features["is_form"] = bool(
